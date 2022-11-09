@@ -1,8 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE HTML PUBLIC >
 
 <HTML>
 
  <HEAD>
+  <meta charset="UTF-8">
 
   <TITLE> YÊU BÉ CỎ ❤ </TITLE>
 
@@ -28,6 +29,7 @@
 
 }
 
+
 canvas {
 
   position: absolute;
@@ -36,6 +38,32 @@ canvas {
 
   height: 100%;
 
+}
+@-webkit-keyframes my {
+	 0% { color: #F8CD0A; } 
+	 50% { color: #fff;  } 
+	 100% { color: #F8CD0A;  } 
+ }
+ @-moz-keyframes my { 
+	 0% { color: #F8CD0A;  } 
+	 50% { color: #fff;  }
+	 100% { color: #F8CD0A;  } 
+ }
+ @-o-keyframes my { 
+	 0% { color: #F8CD0A; } 
+	 50% { color: #fff; } 
+	 100% { color: #F8CD0A;  } 
+ }
+ @keyframes my { 
+	 0% { color: #F8CD0A;  } 
+	 50% { color: #fff;  }
+	 100% { color: #F8CD0A;  } 
+ } 
+ .test {
+	 -webkit-animation: my 700ms infinite;
+	 -moz-animation: my 700ms infinite; 
+	 -o-animation: my 700ms infinite; 
+	 animation: my 700ms infinite;
 }
 
   </style>
@@ -133,12 +161,6 @@ var Point = (function() {
 
 })();
 
-
-/*
-
- * Particle class
-
- */
 
 var Particle = (function() {
 
@@ -509,9 +531,8 @@ var ParticlePool = (function() {
   }, 10);
 
 })(document.getElementById('pinkboard'));
-
   </script>
-<div class="center-text",
+<div class="center-text test",
 style="background-color:rgb(0, 0, 0);
       width: 100%;
       color: rgb(225, 12, 168);
@@ -522,7 +543,8 @@ style="background-color:rgb(0, 0, 0);
       align-items: center;
       justify-content: center;
       margin-bottom: 5px;
-      text-align: center;">Yêu Bé Cỏ</div>
+      text-align: center;"
+      >Yêu Bé Cỏ Lắm Đó ❤</div>
  </BODY>
 
 </HTML>
